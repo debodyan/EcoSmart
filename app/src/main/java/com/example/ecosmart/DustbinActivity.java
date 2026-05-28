@@ -63,7 +63,9 @@ public class DustbinActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(DustbinActivity.this,"logout",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DustbinActivity.this,LoginActivity.class);
+                startActivity(intent);
+                Toast.makeText(DustbinActivity.this,"logout success",Toast.LENGTH_SHORT).show();
             }
         });
 

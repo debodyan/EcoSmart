@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1034293032459",
+    "firebase_url": "https://ecosmart-1c34e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ecosmart-1c34e",
+    "storage_bucket": "ecosmart-1c34e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034293032459:android:638549567358417367390e",
+        "android_client_info": {
+          "package_name": "com.example.ecosmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Y6q_RfUskpwCZ51qPbPZEB_KFfs0u08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

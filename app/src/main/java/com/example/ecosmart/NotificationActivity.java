@@ -64,7 +64,9 @@ public class NotificationActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(NotificationActivity.this,"logout",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(NotificationActivity.this,LoginActivity.class);
+                startActivity(intent);
+                Toast.makeText(NotificationActivity.this,"logout success",Toast.LENGTH_SHORT).show();
             }
         });
 
