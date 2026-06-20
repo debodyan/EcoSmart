@@ -46,14 +46,15 @@
                         android:text="0"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:textColor="#FF5722"/>
+                        android:textColor="#9E9E9E"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Full Dustbins"
+                        android:textStyle="bold"
                         android:textSize="12sp"
-                        android:textColor="#FF5722"/>
+                        android:textColor="@color/nav_bg"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -81,14 +82,15 @@
                         android:text="0"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:textColor="#F44336"/>
+                        android:textColor="#9E9E9E"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hazardous"
+                        android:textStyle="bold"
                         android:textSize="12sp"
-                        android:textColor="#F44336"/>
+                        android:textColor="@color/nav_bg"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

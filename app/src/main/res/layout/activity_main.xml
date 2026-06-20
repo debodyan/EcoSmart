@@ -331,6 +331,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="View All Dustbins"
+                            android:textStyle="bold"
                             android:textSize="15sp"
                             android:textColor="#388E3C"
                             android:background="@color/cardview_light_background"/>
@@ -366,6 +367,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Full Dustbins"
+                            android:textStyle="bold"
                             android:textSize="15sp"
                             android:textColor="#E65100"/>
 
@@ -400,6 +402,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Hazardous Dustbins"
+                            android:textStyle="bold"
                             android:textSize="15sp"
                             android:textColor="#B71C1C"/>
 
@@ -434,6 +437,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="My Complaints"
+                            android:textStyle="bold"
                             android:textSize="15sp"
                             android:textColor="@color/nav_bg"/>
 
