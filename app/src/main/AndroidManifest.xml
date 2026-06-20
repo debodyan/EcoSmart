@@ -33,6 +33,14 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
+        <activity android:name=".FullDustbinsActivity"/>
+        <activity android:name=".HazardousActivity"/>
+        <activity android:name=".ComplaintsActivity"/>
+        <activity android:name=".ProfileActivity"/>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
 
 </manifest>
