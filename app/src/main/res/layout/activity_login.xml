@@ -7,14 +7,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/bg_img"
+    android:background="#FBF9FF"
     tools:context=".LoginActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
+        android:layout_gravity="center_vertical"
         app:cardElevation="20dp" >
 
         <LinearLayout
@@ -23,13 +29,13 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
-            android:background="@drawable/lav_border">
+            android:background="#F5F5F5">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log In"
-                android:textSize="36sp"
+                android:text="EcoSmart"
+                android:textSize="30sp"
                 android:gravity="center"
                 android:textColor="@color/nav_bg"
                 android:fontFamily="sans-serif-black"/>
@@ -40,26 +46,34 @@
                 android:id="@+id/login_username"
                 android:layout_marginTop="40dp"
                 android:padding="10dp"
-                android:hint="Username"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:hint="username"
+                android:textColorHint="@color/nav_bg"
+                android:textColor="@color/nav_bg"
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:id="@+id/login_password"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/nav_bg"
                 android:padding="10dp"
-                android:hint="Password"
+                android:hint="password"
                 android:inputType="textPassword"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:textColorHint="@color/nav_bg"
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/login_button"
+                android:backgroundTint="@color/nav_bg"
                 android:text="Log In"
+                android:textColor="@color/white"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 />
 
@@ -67,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not an User? Sign Up"
+                android:textStyle="italic"
                 android:textColor="@color/nav_bg"
                 android:id="@+id/goto_signup"
                 android:gravity="center"
@@ -79,6 +94,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+</ScrollView>
 
 
 

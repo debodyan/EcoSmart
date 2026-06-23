@@ -7,12 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/bg_img"
+    android:background="#FBF9FF"
     tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp" >
@@ -23,13 +28,13 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
-            android:background="@drawable/lav_border">
+            android:background="#F5F5F5">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:gravity="center"
                 android:textColor="@color/nav_bg"
                 android:fontFamily="sans-serif-black"/>
@@ -40,8 +45,10 @@
                 android:layout_marginTop="40dp"
                 android:padding="10dp"
                 android:hint="Name"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:textColorHint="@color/nav_bg"
+                android:textColor="@color/nav_bg"
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -50,8 +57,10 @@
                 android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:hint="Email"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:textColorHint="@color/nav_bg"
+                android:textColor="@color/nav_bg"
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -60,8 +69,10 @@
                 android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:hint="Username"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:textColorHint="@color/nav_bg"
+                android:textColor="@color/nav_bg"
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -70,14 +81,20 @@
                 android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:hint="Password"
+                android:textColorHint="@color/nav_bg"
+                android:textColor="@color/nav_bg"
                 android:inputType="textPassword"
-                android:background="@drawable/lav_border"
-                android:fontFamily="sans-serif-black" />
+                android:background="@color/white"
+                android:fontFamily="sans-serif" />
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:id="@+id/signup_button"
+                android:backgroundTint="@color/nav_bg"
                 android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"
                 />
@@ -86,6 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Already an User? Log IN"
+                android:textStyle="italic"
                 android:textColor="@color/nav_bg"
                 android:id="@+id/goto_login"
                 android:gravity="center"
@@ -98,6 +116,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    </ScrollView>
 
 
 

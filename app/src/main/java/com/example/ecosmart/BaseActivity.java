@@ -32,6 +32,7 @@ public class BaseActivity extends AppCompatActivity {
         Intent intent = new Intent(activity, secondActivity);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
+
     }
 
     protected void setupToolbar() {

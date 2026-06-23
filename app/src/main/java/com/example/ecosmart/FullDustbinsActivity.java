@@ -122,9 +122,7 @@ public class FullDustbinsActivity extends BaseActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(FullDustbinsActivity.this,
-                        "Failed to load: " + error.getMessage(),
-                        Toast.LENGTH_LONG).show();
+                Toast.makeText(FullDustbinsActivity.this, "Failed to load: " + error.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }

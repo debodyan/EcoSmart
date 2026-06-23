@@ -29,7 +29,6 @@ public class ComplaintAdapter extends RecyclerView.Adapter<ComplaintAdapter.Comp
     public static class ComplaintViewHolder extends RecyclerView.ViewHolder {
         TextView tvUsername, tvStatus, tvLocation, tvDescription, tvTime;
         CardView complaintCard;
-
         public ComplaintViewHolder(@NonNull View itemView) {
             super(itemView);
             tvUsername    = itemView.findViewById(R.id.tv_complaint_username);

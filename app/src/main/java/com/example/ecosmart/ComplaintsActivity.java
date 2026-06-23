@@ -137,9 +137,7 @@ public class ComplaintsActivity extends BaseActivity {
 
         complaintsRef.child(complaintId).setValue(complaint)
                 .addOnSuccessListener(unused -> {
-                    Toast.makeText(ComplaintsActivity.this,
-                            "Complaint submitted successfully!",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ComplaintsActivity.this, "Complaint submitted successfully!", Toast.LENGTH_SHORT).show();
                     etLocation.setText("");
                     etDescription.setText("");
                 })

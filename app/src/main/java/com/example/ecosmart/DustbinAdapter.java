@@ -1,16 +1,19 @@
 package com.example.ecosmart;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +23,7 @@ public class DustbinAdapter extends RecyclerView.Adapter<DustbinAdapter.DustbinV
     private Context context;
     private List<Dustbin> fullList;
     private List<Dustbin> filteredList;
+
 
     public DustbinAdapter(Context context, List<Dustbin> dustbinList) {
         this.context      = context;
@@ -90,6 +94,16 @@ public class DustbinAdapter extends RecyclerView.Adapter<DustbinAdapter.DustbinV
             holder.dustbinCard.setCardBackgroundColor(
                     Color.parseColor("#FBF9FF"));
         }
+
+        LinearLayout btnViewMap = holder.itemView.findViewById(R.id.btn_view_map);
+        btnViewMap.setOnClickListener(v -> {
+            Intent intent = new Intent(context, MapsActivity.class);
+            intent.putExtra("dustbinId", dustbin.getId());
+            intent.putExtra("location", dustbin.getLocation());
+            intent.putExtra("latitude", dustbin.getLatitude());
+            intent.putExtra("longitude", dustbin.getLongitude());
+            context.startActivity(intent);
+        });
     }
 
     @Override

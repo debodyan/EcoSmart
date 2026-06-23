@@ -23,7 +23,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
-
     EditText login_username,login_password;
     Button login_button;
     TextView goto_signup;
