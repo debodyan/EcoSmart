@@ -86,14 +86,6 @@ public class DustbinAdapter extends RecyclerView.Adapter<DustbinAdapter.DustbinV
             holder.tvGasStatus.setBackgroundResource(R.drawable.bg_status_safe);
         }
 
-        if (dustbin.getFillLevel() >= 80
-                || "Danger".equals(dustbin.getGasStatus())) {
-            holder.dustbinCard.setCardBackgroundColor(
-                    Color.parseColor("#FBF9FF"));
-        } else {
-            holder.dustbinCard.setCardBackgroundColor(
-                    Color.parseColor("#FBF9FF"));
-        }
 
         LinearLayout btnViewMap = holder.itemView.findViewById(R.id.btn_view_map);
         btnViewMap.setOnClickListener(v -> {

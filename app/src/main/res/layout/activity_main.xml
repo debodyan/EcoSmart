@@ -38,24 +38,25 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="20dp"
+                        android:weightSum="2"
                         android:background="@color/nav_bg">
 
                         <TextView
                             android:id="@+id/tv_welcome"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Welcome back!"
+                            android:text="EcoSmart Monitoring Dashboard"
                             android:textSize="22sp"
                             android:textStyle="bold"
                             android:textColor="#FFFFFF"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="EcoSmart Monitoring Dashboard"
-                            android:textSize="13sp"
-                            android:textColor="#CCFFFFFF"
-                            android:layout_marginTop="4dp"/>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="EcoSmart Monitoring Dashboard"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="#CCFFFFFF"-->
+<!--                            android:layout_marginTop="4dp"/>-->
 
                         <TextView
                             android:id="@+id/tv_last_updated"
@@ -94,28 +95,28 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_light_background"
                             android:gravity="center"
-                            android:padding="20dp"
-                            android:background="@color/cardview_light_background">
+                            android:orientation="vertical"
+                            android:padding="20dp">
 
                             <TextView
                                 android:id="@+id/tv_total_count"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="0"
+                                android:textColor="#2E7D32"
                                 android:textSize="36sp"
-                                android:textStyle="bold"
-                                android:textColor="#2E7D32"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:gravity="center"
                                 android:text="Total Dustbins"
-                                android:textSize="12sp"
                                 android:textColor="#388E3C"
-                                android:gravity="center"/>
+                                android:textSize="12sp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -162,6 +163,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:weightSum="2"
                     android:layout_marginBottom="16dp">
 
                     <androidx.cardview.widget.CardView

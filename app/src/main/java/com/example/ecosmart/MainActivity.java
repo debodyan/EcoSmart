@@ -82,9 +82,6 @@ public class MainActivity extends BaseActivity {
         btnHazardous    = findViewById(R.id.btn_hazardous);
         btnComplaints   = findViewById(R.id.btn_complaints);
 
-        String displayName = currentUsername.substring(0, 1).toUpperCase()
-                + currentUsername.substring(1);
-        tvWelcome.setText("Welcome back, " + displayName + "! ");
 
         menu.setOnClickListener(v -> openDrawer(drawerLayout));
         home.setOnClickListener(v -> recreate());
@@ -102,8 +99,7 @@ public class MainActivity extends BaseActivity {
             sessionManager.clearSession();
             Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                    | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         });
 
@@ -152,8 +148,7 @@ public class MainActivity extends BaseActivity {
                 tvFullCount.setText(String.valueOf(full));
                 tvHazardousCount.setText(String.valueOf(hazardous));
 
-                int healthPercent = (total > 0)
-                        ? Math.round((safe * 100f) / total) : 0;
+                int healthPercent = (total > 0) ? Math.round((safe * 100f) / total) : 0;
 
                 tvHealthPercent.setText(healthPercent + "%");
                 progressBarHealth.setProgress(healthPercent);

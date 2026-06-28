@@ -27,35 +27,45 @@ public class LoginActivity extends AppCompatActivity {
     Button login_button;
     TextView goto_signup;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
+        SessionManager sessionManager = new SessionManager(LoginActivity.this);
+        if (sessionManager.isLoggedIn()) {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        } else {
 
-        login_username = findViewById(R.id.login_username);
-        login_password = findViewById(R.id.login_password);
-        login_button = findViewById(R.id.login_button);
-        goto_signup = findViewById(R.id.goto_signup);
 
-        login_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!validateUsername() || !validatePassword()) {
-                } else {
-                    checkUser();
+            login_username = findViewById(R.id.login_username);
+            login_password = findViewById(R.id.login_password);
+            login_button = findViewById(R.id.login_button);
+            goto_signup = findViewById(R.id.goto_signup);
+
+            login_button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (!validateUsername() || !validatePassword()) {
+                    } else {
+                        checkUser();
+                    }
                 }
-            }
-        });
+            });
 
-        goto_signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,SignupActivity.class);
-                startActivity(intent);
-            }
-        });
+            goto_signup.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
+    }
 
 
     public boolean validateUsername(){
